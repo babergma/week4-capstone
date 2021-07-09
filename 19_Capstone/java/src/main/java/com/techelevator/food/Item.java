@@ -7,7 +7,7 @@ public abstract class Item {
 private String name;
 private BigDecimal price;
 private String code;
-private int quantity;
+private int quantity =5;
 private String category;
 
 
@@ -19,7 +19,7 @@ private String category;
         this.category = category;
     }
     public String toString(){
-        return code + " " + name + ", $" + price + "\n";
+        return code + " " + name + ", $" + price;
     }
 
 public abstract String displayVendingSlogan();
